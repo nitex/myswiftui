@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+// convert decimal value (0 - 255) to hexadecimal
+// (use .toString(16) method supported by IE)
+function toHex(dec) {
+	// create list of hex characters
+	var hexCharacters = "0123456789ABCDEF"
+
+	// if number is out of range return limit
+	if (dec < 0)
+		return "00"
+	if (dec > 255)
+		return "FF"
+
+	// decimal equivalent of first hex character in converted number
+	var i = Math.floor(dec / 16)
+
+	// decimal equivalent of second hex character in converted number
+	var j = dec % 16
+
+	// return hexadecimal equivalent
+	return hexCharacters.charAt(i) + hexCharacters.charAt(j)
+}
+
+// set background color to specified descriptors
+function setbgColor(red, green, blue) {
+	 document.bgColor = "#" + toHex(red) + toHex(green) + toHex(blue)
+}
+
+// fade from start to end descriptors (increase step to increase transition speed)
+function fade(sred, sgreen, sblue, ered, egreen, eblue, step) {
+	// loop to create fade effect
+	for(var i = 0; i <= step; ++i) {
+		// set current red descriptor
+		var red = Math.floor(sred * ((step - i) / step) + ered * (i / step))
+
+		// set current green descriptor
+		var green = Math.floor(sgreen * ((step - i) / step) + egreen * (i / step))
+
+		// set current green descriptor
+		var blue = Math.floor(sblue * ((step - i) / step) + eblue * (i / step))
+
+		// set background color according to descriptors
+		setbgColor(red, green, blue)
+	}
+}
+
+// -->
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#7F007F" ALINK="#FF0000" onLoad="fade(0, 0, 0, 255, 255, 255, 64)" onUnload="fade(255, 255, 255, 0, 0, 0, 64)">
+</BODY>
+</HTML>
