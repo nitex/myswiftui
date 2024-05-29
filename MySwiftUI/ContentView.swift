@@ -19,8 +19,7 @@ struct ContentView: View {
     var body: some View {
         VStack{
             NavigationView(content: {
-                VStack{
-                    NavigationLink(destination: FlagView()) { Text("Flags") }
+                VStack (spacing: 15) {
                     NavigationLink(destination: PositionView()) { Text("Positions") }
                     
                     if (ShowPayload().show) {
@@ -30,6 +29,9 @@ struct ContentView: View {
                     {
                         NavigationLink(destination: ListView()) { Text("ListView") }
                     }
+                    
+                    NavigationLink(destination: LoginDemo()) { Text("Login Demo") }
+                    NavigationLink(destination: TabBarView()) { Text("2 Tab Bars") }
                 }})
             Button("Change", action: {
                 ShowPayload().show.toggle()
