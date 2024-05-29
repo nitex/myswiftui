@@ -19,21 +19,20 @@ struct ContentView: View {
     var body: some View {
         VStack{
             NavigationView(content: {
-                if (ShowPayload().show) {
-                    NavigationLink(destination: FlagView(title: "Choose flag")) {
-                        Text("Navigation")
+                VStack{
+                    NavigationLink(destination: FlagView()) { Text("Flags") }
+                    NavigationLink(destination: PositionView()) { Text("Positions") }
+                    
+                    if (ShowPayload().show) {
+                        NavigationLink(destination: FlagView(title: "Choose flag")) { Text("Flags") }
                     }
-                }
-                else
-                {
-                    NavigationLink(destination: ListView()) {
-                        Text("Navigation")
+                    else
+                    {
+                        NavigationLink(destination: ListView()) { Text("ListView") }
                     }
-                }
-            })
-            Button("Save", action: {
-                
-                print(ShowPayload().show)
+                }})
+            Button("Change", action: {
+                ShowPayload().show.toggle()
             })
         }.onAppear()
         {

@@ -13,6 +13,8 @@
 		DE4605DE2BB2F64D00AFFAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4605DD2BB2F64D00AFFAC3 /* Assets.xcassets */; };
 		DE4605E12BB2F64D00AFFAC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4605E02BB2F64D00AFFAC3 /* Preview Assets.xcassets */; };
 		DE5D05B42BE10C4200468ABC /* PositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D05B32BE10C4200468ABC /* PositionView.swift */; };
+		DEBC8F1C2C071AA10077CE41 /* LoginDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC8F1A2C071AA10077CE41 /* LoginDemo.swift */; };
+		DEBC8F1D2C071AA10077CE41 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC8F1B2C071AA10077CE41 /* TabBarView.swift */; };
 		DEBF0BAC2BDD3164001CBA46 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF0BAB2BDD3164001CBA46 /* ListView.swift */; };
 		DEE0053F2BD64D550001BF19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEE0053E2BD64D550001BF19 /* GoogleService-Info.plist */; };
 		DEE005422BD64DD60001BF19 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DEE005412BD64DD60001BF19 /* FirebaseAnalytics */; };
@@ -30,6 +32,8 @@
 		DE4605DD2BB2F64D00AFFAC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4605E02BB2F64D00AFFAC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE5D05B32BE10C4200468ABC /* PositionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionView.swift; sourceTree = "<group>"; };
+		DEBC8F1A2C071AA10077CE41 /* LoginDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDemo.swift; sourceTree = "<group>"; };
+		DEBC8F1B2C071AA10077CE41 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		DEBF0BAB2BDD3164001CBA46 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DEE0053E2BD64D550001BF19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,10 +74,12 @@
 			isa = PBXGroup;
 			children = (
 				DEBF0BAB2BDD3164001CBA46 /* ListView.swift */,
+				DE4605DB2BB2F64C00AFFAC3 /* FlagView.swift */,
+				DE5D05B32BE10C4200468ABC /* PositionView.swift */,
 				DE4605D92BB2F64C00AFFAC3 /* MySwiftUIApp.swift */,
 				DE2A130C2BCFE3D5001822A9 /* ContentView.swift */,
-				DE5D05B32BE10C4200468ABC /* PositionView.swift */,
-				DE4605DB2BB2F64C00AFFAC3 /* FlagView.swift */,
+				DEBC8F1B2C071AA10077CE41 /* TabBarView.swift */,
+				DEBC8F1A2C071AA10077CE41 /* LoginDemo.swift */,
 				DE4605DD2BB2F64D00AFFAC3 /* Assets.xcassets */,
 				DEE0053E2BD64D550001BF19 /* GoogleService-Info.plist */,
 				DE4605DF2BB2F64D00AFFAC3 /* Preview Content */,
@@ -172,9 +178,11 @@
 			files = (
 				DE5D05B42BE10C4200468ABC /* PositionView.swift in Sources */,
 				DEBF0BAC2BDD3164001CBA46 /* ListView.swift in Sources */,
+				DEBC8F1C2C071AA10077CE41 /* LoginDemo.swift in Sources */,
 				DE4605DC2BB2F64C00AFFAC3 /* FlagView.swift in Sources */,
 				DE4605DA2BB2F64C00AFFAC3 /* MySwiftUIApp.swift in Sources */,
 				DE2A130D2BCFE3D5001822A9 /* ContentView.swift in Sources */,
+				DEBC8F1D2C071AA10077CE41 /* TabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +328,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = my.swift.ui;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iansolomein.FirebaseExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -348,7 +356,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = my.swift.ui;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iansolomein.FirebaseExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

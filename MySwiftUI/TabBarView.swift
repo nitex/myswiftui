@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct TabBarView: View {
     var body: some View {
         TabView {
             AirplaneView()
