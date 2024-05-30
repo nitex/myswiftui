@@ -18,21 +18,29 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            NavigationView(content: {
-                VStack (spacing: 15) {
-                    NavigationLink(destination: PositionView()) { Text("Positions") }
-                    
-                    if (ShowPayload().show) {
-                        NavigationLink(destination: FlagView(title: "Choose flag")) { Text("Flags") }
+            NavigationView {
+                HStack (alignment: .top, spacing: 25) {
+                    VStack (alignment: .leading, spacing: 15) {
+                        NavigationLink(destination: PositionView()) { Text("Positions") }
+                        
+                        if (ShowPayload().show) {
+                            NavigationLink(destination: FlagView(title: "Choose flag")) { Text("Flags") }
+                        }
+                        else
+                        {
+                            NavigationLink(destination: ListView()) { Text("ListView") }
+                        }
+                        
+                        NavigationLink(destination: LoginDemo()) { Text("Login Demo") }
+                        NavigationLink(destination: TabBarView()) { Text("2 Tab Bars") }
+                        NavigationLink(destination: MapView()) { Text("Map View") }
                     }
-                    else
-                    {
-                        NavigationLink(destination: ListView()) { Text("ListView") }
-                    }
                     
-                    NavigationLink(destination: LoginDemo()) { Text("Login Demo") }
-                    NavigationLink(destination: TabBarView()) { Text("2 Tab Bars") }
-                }})
+                    VStack (alignment: .leading, spacing: 15) {
+                        
+                    }
+                }
+            }
             Button("Change", action: {
                 ShowPayload().show.toggle()
             })

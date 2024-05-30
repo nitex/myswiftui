@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE2A130D2BCFE3D5001822A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2A130C2BCFE3D5001822A9 /* ContentView.swift */; };
+		DE452E1F2C08644C00A3C371 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE452E1E2C08644C00A3C371 /* MapView.swift */; };
 		DE4605DA2BB2F64C00AFFAC3 /* MySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4605D92BB2F64C00AFFAC3 /* MySwiftUIApp.swift */; };
 		DE4605DC2BB2F64C00AFFAC3 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4605DB2BB2F64C00AFFAC3 /* FlagView.swift */; };
 		DE4605DE2BB2F64D00AFFAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4605DD2BB2F64D00AFFAC3 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		DE2A130C2BCFE3D5001822A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE452E1E2C08644C00A3C371 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DE4605D62BB2F64C00AFFAC3 /* MySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4605D92BB2F64C00AFFAC3 /* MySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUIApp.swift; sourceTree = "<group>"; };
 		DE4605DB2BB2F64C00AFFAC3 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				DEBF0BAB2BDD3164001CBA46 /* ListView.swift */,
 				DE4605DB2BB2F64C00AFFAC3 /* FlagView.swift */,
+				DE452E1E2C08644C00A3C371 /* MapView.swift */,
 				DE5D05B32BE10C4200468ABC /* PositionView.swift */,
 				DE4605D92BB2F64C00AFFAC3 /* MySwiftUIApp.swift */,
 				DE2A130C2BCFE3D5001822A9 /* ContentView.swift */,
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5D05B42BE10C4200468ABC /* PositionView.swift in Sources */,
+				DE452E1F2C08644C00A3C371 /* MapView.swift in Sources */,
 				DEBF0BAC2BDD3164001CBA46 /* ListView.swift in Sources */,
 				DEBC8F1C2C071AA10077CE41 /* LoginDemo.swift in Sources */,
 				DE4605DC2BB2F64C00AFFAC3 /* FlagView.swift in Sources */,
