@@ -21,29 +21,22 @@ struct ContentView: View {
             NavigationView {
                 HStack (alignment: .top, spacing: 25) {
                     VStack (alignment: .leading, spacing: 15) {
-                        NavigationLink(destination: PositionView()) { Text("Positions") }
                         
                         if (ShowPayload().show) {
-                            NavigationLink(destination: FlagView(title: "Choose flag")) { Text("Flags") }
-                        }
-                        else
-                        {
-                            NavigationLink(destination: ListView()) { Text("ListView") }
+                            NavigationLink(destination: FlagView(title: "Choose")) { Text("Flag / List") }
+                        } else {
+                            NavigationLink(destination: ListView()) { Text("Flag / List") }
                         }
                         
+                        NavigationLink(destination: PositionView()) { Text("Positions") }
                         NavigationLink(destination: LoginDemo()) { Text("Login Demo") }
                         NavigationLink(destination: TabBarView()) { Text("2 Tab Bars") }
                         NavigationLink(destination: MapView()) { Text("Map View") }
                     }
                     
-                    VStack (alignment: .leading, spacing: 15) {
-                        
-                    }
+                    VStack (alignment: .leading, spacing: 15) { }
                 }
             }
-            Button("Change", action: {
-                ShowPayload().show.toggle()
-            })
         }.onAppear()
         {
             self.firebase()
