@@ -28,16 +28,14 @@ struct PositionView: View {
                     Text("title").font(.title)
                     Text("title2").font(.title2)
                     Text("title3").font(.title3)
-                    Text("headline").font(.headline)
-                }
+                    Text("headline").font(.headline) }
                 
                 VStack (alignment: .leading) {
                     Text("subheadline").font(.subheadline)
                     Text("callout").font(.callout)
                     Text("footnote").font(.footnote)
                     Text("caption").font(.caption)
-                    Text("caption2").font(.caption2)
-                } }
+                    Text("caption2").font(.caption2) } }
             
             Text("Hello, World!")
                 .padding()
