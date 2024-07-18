@@ -22,6 +22,23 @@ struct MyActionButtonStyle: ButtonStyle {
 struct PositionView: View {
     var body: some View {
         VStack {
+            Text("largeTitle").font(.largeTitle)
+            HStack (alignment: .bottom) {
+                VStack (alignment: .leading) {
+                    Text("title").font(.title)
+                    Text("title2").font(.title2)
+                    Text("title3").font(.title3)
+                    Text("headline").font(.headline)
+                }
+                
+                VStack (alignment: .leading) {
+                    Text("subheadline").font(.subheadline)
+                    Text("callout").font(.callout)
+                    Text("footnote").font(.footnote)
+                    Text("caption").font(.caption)
+                    Text("caption2").font(.caption2)
+                } }
+            
             Text("Hello, World!")
                 .padding()
                 .overlay(RoundedRectangle(cornerRadius: 15)
@@ -41,17 +58,17 @@ struct PositionView: View {
                 .saturation(3.0)
             
             HStack(spacing: 20) {
-                        Button(action: {}) {
-                            Text("Left")
-                        }
-                        .buttonStyle(MyActionButtonStyle())
-
-                        Button(action: {}) {
-                            Text("Right")
-                        }
-                        .buttonStyle(MyActionButtonStyle())
-                    }
-                    .padding(.horizontal, 20)
+                Button(action: {}) {
+                    Text("Left")
+                }
+                .buttonStyle(MyActionButtonStyle())
+                
+                Button(action: {}) {
+                    Text("Right")
+                }
+                .buttonStyle(MyActionButtonStyle())
+            }
+            .padding(.horizontal, 20)
         }
     }
 }
