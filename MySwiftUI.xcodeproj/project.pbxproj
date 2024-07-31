@@ -14,6 +14,7 @@
 		DE4605DE2BB2F64D00AFFAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4605DD2BB2F64D00AFFAC3 /* Assets.xcassets */; };
 		DE4605E12BB2F64D00AFFAC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4605E02BB2F64D00AFFAC3 /* Preview Assets.xcassets */; };
 		DE5D05B42BE10C4200468ABC /* PositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D05B32BE10C4200468ABC /* PositionView.swift */; };
+		DEB3E68F2C5A6A25006E700E /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3E68E2C5A6A25006E700E /* WeatherView.swift */; };
 		DEBC8F1C2C071AA10077CE41 /* LoginDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC8F1A2C071AA10077CE41 /* LoginDemo.swift */; };
 		DEBC8F1D2C071AA10077CE41 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC8F1B2C071AA10077CE41 /* TabBarView.swift */; };
 		DEBF0BAC2BDD3164001CBA46 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF0BAB2BDD3164001CBA46 /* ListView.swift */; };
@@ -34,6 +35,8 @@
 		DE4605DD2BB2F64D00AFFAC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4605E02BB2F64D00AFFAC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE5D05B32BE10C4200468ABC /* PositionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionView.swift; sourceTree = "<group>"; };
+		DEB3E68E2C5A6A25006E700E /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		DEB3E6902C5A6AE8006E700E /* MySwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySwiftUI.entitlements; sourceTree = "<group>"; };
 		DEBC8F1A2C071AA10077CE41 /* LoginDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDemo.swift; sourceTree = "<group>"; };
 		DEBC8F1B2C071AA10077CE41 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		DEBF0BAB2BDD3164001CBA46 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -79,7 +82,9 @@
 				DE4605DB2BB2F64C00AFFAC3 /* FlagView.swift */,
 				DE452E1E2C08644C00A3C371 /* MapView.swift */,
 				DE5D05B32BE10C4200468ABC /* PositionView.swift */,
+				DEB3E6902C5A6AE8006E700E /* MySwiftUI.entitlements */,
 				DE4605D92BB2F64C00AFFAC3 /* MySwiftUIApp.swift */,
+				DEB3E68E2C5A6A25006E700E /* WeatherView.swift */,
 				DE2A130C2BCFE3D5001822A9 /* ContentView.swift */,
 				DEBC8F1B2C071AA10077CE41 /* TabBarView.swift */,
 				DEBC8F1A2C071AA10077CE41 /* LoginDemo.swift */,
@@ -185,6 +190,7 @@
 				DEBC8F1C2C071AA10077CE41 /* LoginDemo.swift in Sources */,
 				DE4605DC2BB2F64C00AFFAC3 /* FlagView.swift in Sources */,
 				DE4605DA2BB2F64C00AFFAC3 /* MySwiftUIApp.swift in Sources */,
+				DEB3E68F2C5A6A25006E700E /* WeatherView.swift in Sources */,
 				DE2A130D2BCFE3D5001822A9 /* ContentView.swift in Sources */,
 				DEBC8F1D2C071AA10077CE41 /* TabBarView.swift in Sources */,
 			);
@@ -317,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MySwiftUI/MySwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MySwiftUI/Preview Content\"";
@@ -332,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.16;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.pract;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yugasamuel.WeatherBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -349,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MySwiftUI/MySwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MySwiftUI/Preview Content\"";
@@ -364,7 +372,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.16;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.pract;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yugasamuel.WeatherBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

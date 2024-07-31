@@ -31,6 +31,7 @@ struct PositionView: View {
                     Text("headline").font(.headline) }
                 
                 VStack (alignment: .leading) {
+                    Text("normal")
                     Text("subheadline").font(.subheadline)
                     Text("callout").font(.callout)
                     Text("footnote").font(.footnote)
@@ -57,12 +58,12 @@ struct PositionView: View {
             
             HStack(spacing: 20) {
                 Button(action: {}) {
-                    Text("Left")
+                    Text("Equal")
                 }
                 .buttonStyle(MyActionButtonStyle())
                 
                 Button(action: {}) {
-                    Text("Right")
+                    Text("Width")
                 }
                 .buttonStyle(MyActionButtonStyle())
             }
