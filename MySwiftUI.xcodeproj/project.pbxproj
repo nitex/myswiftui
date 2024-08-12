@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE038C492C6A8ED900DA7C2D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE038C482C6A8ED900DA7C2D /* LoginView.swift */; };
+		DE038C4B2C6A8F2700DA7C2D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DE038C4A2C6A8F2700DA7C2D /* FirebaseFirestore */; };
+		DE038C4D2C6A8F2700DA7C2D /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DE038C4C2C6A8F2700DA7C2D /* FirebaseFirestoreCombine-Community */; };
+		DE038C4F2C6A8F2700DA7C2D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE038C4E2C6A8F2700DA7C2D /* FirebaseFirestoreSwift */; };
+		DE038C522C6A906F00DA7C2D /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = DE038C512C6A906F00DA7C2D /* PopupView */; };
 		DE2A130D2BCFE3D5001822A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2A130C2BCFE3D5001822A9 /* ContentView.swift */; };
 		DE452E1F2C08644C00A3C371 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE452E1E2C08644C00A3C371 /* MapView.swift */; };
 		DE4605DA2BB2F64C00AFFAC3 /* MySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4605D92BB2F64C00AFFAC3 /* MySwiftUIApp.swift */; };
@@ -27,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE038C482C6A8ED900DA7C2D /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DE2A130C2BCFE3D5001822A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE452E1E2C08644C00A3C371 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DE4605D62BB2F64C00AFFAC3 /* MySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,8 +57,12 @@
 				DEE005462BD64DD60001BF19 /* FirebaseDatabaseSwift in Frameworks */,
 				DEE005442BD64DD60001BF19 /* FirebaseDatabase in Frameworks */,
 				DEE005422BD64DD60001BF19 /* FirebaseAnalytics in Frameworks */,
+				DE038C522C6A906F00DA7C2D /* PopupView in Frameworks */,
 				DEE005482BD64E620001BF19 /* FirebaseAuth in Frameworks */,
 				DEE0054A2BD64E7D0001BF19 /* FirebaseDynamicLinks in Frameworks */,
+				DE038C4B2C6A8F2700DA7C2D /* FirebaseFirestore in Frameworks */,
+				DE038C4D2C6A8F2700DA7C2D /* FirebaseFirestoreCombine-Community in Frameworks */,
+				DE038C4F2C6A8F2700DA7C2D /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,18 +89,19 @@
 			isa = PBXGroup;
 			children = (
 				DEBF0BAB2BDD3164001CBA46 /* ListView.swift */,
-				DE4605DB2BB2F64C00AFFAC3 /* FlagView.swift */,
 				DE452E1E2C08644C00A3C371 /* MapView.swift */,
-				DE5D05B32BE10C4200468ABC /* PositionView.swift */,
-				DEB3E6902C5A6AE8006E700E /* MySwiftUI.entitlements */,
-				DE4605D92BB2F64C00AFFAC3 /* MySwiftUIApp.swift */,
-				DEB3E68E2C5A6A25006E700E /* WeatherView.swift */,
-				DE2A130C2BCFE3D5001822A9 /* ContentView.swift */,
-				DEBC8F1B2C071AA10077CE41 /* TabBarView.swift */,
+				DE4605DB2BB2F64C00AFFAC3 /* FlagView.swift */,
+				DE038C482C6A8ED900DA7C2D /* LoginView.swift */,
 				DEBC8F1A2C071AA10077CE41 /* LoginDemo.swift */,
-				DE4605DD2BB2F64D00AFFAC3 /* Assets.xcassets */,
+				DEBC8F1B2C071AA10077CE41 /* TabBarView.swift */,
+				DE5D05B32BE10C4200468ABC /* PositionView.swift */,
+				DE2A130C2BCFE3D5001822A9 /* ContentView.swift */,
+				DEB3E68E2C5A6A25006E700E /* WeatherView.swift */,
+				DE4605D92BB2F64C00AFFAC3 /* MySwiftUIApp.swift */,
+				DEB3E6902C5A6AE8006E700E /* MySwiftUI.entitlements */,
 				DEE0053E2BD64D550001BF19 /* GoogleService-Info.plist */,
 				DE4605DF2BB2F64D00AFFAC3 /* Preview Content */,
+				DE4605DD2BB2F64D00AFFAC3 /* Assets.xcassets */,
 			);
 			path = MySwiftUI;
 			sourceTree = "<group>";
@@ -125,6 +136,10 @@
 				DEE005452BD64DD60001BF19 /* FirebaseDatabaseSwift */,
 				DEE005472BD64E620001BF19 /* FirebaseAuth */,
 				DEE005492BD64E7D0001BF19 /* FirebaseDynamicLinks */,
+				DE038C4A2C6A8F2700DA7C2D /* FirebaseFirestore */,
+				DE038C4C2C6A8F2700DA7C2D /* FirebaseFirestoreCombine-Community */,
+				DE038C4E2C6A8F2700DA7C2D /* FirebaseFirestoreSwift */,
+				DE038C512C6A906F00DA7C2D /* PopupView */,
 			);
 			productName = MySwiftUI;
 			productReference = DE4605D62BB2F64C00AFFAC3 /* MySwiftUI.app */;
@@ -156,6 +171,7 @@
 			mainGroup = DE4605CD2BB2F64C00AFFAC3;
 			packageReferences = (
 				DEE005402BD64DD60001BF19 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DE038C502C6A906F00DA7C2D /* XCRemoteSwiftPackageReference "PopupView" */,
 			);
 			productRefGroup = DE4605D72BB2F64C00AFFAC3 /* Products */;
 			projectDirPath = "";
@@ -192,6 +208,7 @@
 				DE4605DA2BB2F64C00AFFAC3 /* MySwiftUIApp.swift in Sources */,
 				DEB3E68F2C5A6A25006E700E /* WeatherView.swift in Sources */,
 				DE2A130D2BCFE3D5001822A9 /* ContentView.swift in Sources */,
+				DE038C492C6A8ED900DA7C2D /* LoginView.swift in Sources */,
 				DEBC8F1D2C071AA10077CE41 /* TabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +425,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DE038C502C6A906F00DA7C2D /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.5;
+			};
+		};
 		DEE005402BD64DD60001BF19 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -419,6 +444,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DE038C4A2C6A8F2700DA7C2D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEE005402BD64DD60001BF19 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DE038C4C2C6A8F2700DA7C2D /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEE005402BD64DD60001BF19 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		DE038C4E2C6A8F2700DA7C2D /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEE005402BD64DD60001BF19 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		DE038C512C6A906F00DA7C2D /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE038C502C6A906F00DA7C2D /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
 		DEE005412BD64DD60001BF19 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DEE005402BD64DD60001BF19 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

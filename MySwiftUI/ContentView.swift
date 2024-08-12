@@ -33,6 +33,7 @@ struct ContentView: View {
                         NavigationLink(destination: TabBarView()) { Text("2 Tab Bars") }
                         NavigationLink(destination: MapView()) { Text("Map View") }
                         NavigationLink(destination: WeatherView()) { Text("Weather View") }
+                        NavigationLink(destination: LoginView()) { Text("Movies&Shows") }
                     }
                     
                     VStack (alignment: .leading, spacing: 15) { }

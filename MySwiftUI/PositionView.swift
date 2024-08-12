@@ -32,8 +32,8 @@ struct PositionView: View {
                 
                 VStack (alignment: .leading) {
                     Text("normal")
-                    Text("subheadline").font(.subheadline)
                     Text("callout").font(.callout)
+                    Text("subheadline").font(.subheadline)
                     Text("footnote").font(.footnote)
                     Text("caption").font(.caption)
                     Text("caption2").font(.caption2) } }
