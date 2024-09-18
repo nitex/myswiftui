@@ -34,6 +34,7 @@ struct ContentView: View {
                         NavigationLink(destination: MapView()) { Text("Map View") }
                         NavigationLink(destination: WeatherView()) { Text("Weather View") }
                         NavigationLink(destination: LoginView()) { Text("Movies&Shows") }
+                        NavigationLink(destination: NavigateView()) { Text("NavigationLink") }
                     }
                     
                     VStack (alignment: .leading, spacing: 15) { }

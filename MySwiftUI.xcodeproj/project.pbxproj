@@ -19,6 +19,7 @@
 		DE4605DE2BB2F64D00AFFAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4605DD2BB2F64D00AFFAC3 /* Assets.xcassets */; };
 		DE4605E12BB2F64D00AFFAC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4605E02BB2F64D00AFFAC3 /* Preview Assets.xcassets */; };
 		DE5D05B42BE10C4200468ABC /* PositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D05B32BE10C4200468ABC /* PositionView.swift */; };
+		DEB1CAAE2C9B65BC00925D63 /* NavigateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1CAAD2C9B65BC00925D63 /* NavigateView.swift */; };
 		DEB3E68F2C5A6A25006E700E /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3E68E2C5A6A25006E700E /* WeatherView.swift */; };
 		DEBC8F1C2C071AA10077CE41 /* LoginDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC8F1A2C071AA10077CE41 /* LoginDemo.swift */; };
 		DEBC8F1D2C071AA10077CE41 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC8F1B2C071AA10077CE41 /* TabBarView.swift */; };
@@ -41,6 +42,7 @@
 		DE4605DD2BB2F64D00AFFAC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4605E02BB2F64D00AFFAC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE5D05B32BE10C4200468ABC /* PositionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionView.swift; sourceTree = "<group>"; };
+		DEB1CAAD2C9B65BC00925D63 /* NavigateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigateView.swift; sourceTree = "<group>"; };
 		DEB3E68E2C5A6A25006E700E /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		DEB3E6902C5A6AE8006E700E /* MySwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySwiftUI.entitlements; sourceTree = "<group>"; };
 		DEBC8F1A2C071AA10077CE41 /* LoginDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDemo.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				DE5D05B32BE10C4200468ABC /* PositionView.swift */,
 				DE2A130C2BCFE3D5001822A9 /* ContentView.swift */,
 				DEB3E68E2C5A6A25006E700E /* WeatherView.swift */,
+				DEB1CAAD2C9B65BC00925D63 /* NavigateView.swift */,
 				DE4605D92BB2F64C00AFFAC3 /* MySwiftUIApp.swift */,
 				DEB3E6902C5A6AE8006E700E /* MySwiftUI.entitlements */,
 				DEE0053E2BD64D550001BF19 /* GoogleService-Info.plist */,
@@ -203,6 +206,7 @@
 				DE5D05B42BE10C4200468ABC /* PositionView.swift in Sources */,
 				DE452E1F2C08644C00A3C371 /* MapView.swift in Sources */,
 				DEBF0BAC2BDD3164001CBA46 /* ListView.swift in Sources */,
+				DEB1CAAE2C9B65BC00925D63 /* NavigateView.swift in Sources */,
 				DEBC8F1C2C071AA10077CE41 /* LoginDemo.swift in Sources */,
 				DE4605DC2BB2F64C00AFFAC3 /* FlagView.swift in Sources */,
 				DE4605DA2BB2F64C00AFFAC3 /* MySwiftUIApp.swift in Sources */,
