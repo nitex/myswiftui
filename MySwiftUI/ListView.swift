@@ -12,9 +12,9 @@ struct ListView: View {
                  Menu(text: "Privacy Policy", desc: "Learn how we handle your data with care and confidentiality.", link: ""),
                  Menu(text: "Terms of Use", desc: "Understand rules governing app usage for a smooth experience.", link: ""),
                  Menu(text: "FAQ", desc: "Find quick answers to common questions about loans and borrowing process.", link: "")]
-
+    
     @State private var selection: Menu.ID?
-
+    
     var body: some View {
         NavigationStack {
             List(menus, selection: $selection) { menu in
@@ -31,20 +31,20 @@ struct ListView: View {
                         .frame(maxWidth: .infinity, alignment: .center)
                         .padding(.horizontal)
                 }
-//                    .foregroundStyle(Color(uiColor: .label))
+                //                    .foregroundStyle(Color(uiColor: .label))
                 .listRowBackground(menu.id == selection ? Color.green : Color.blue)
             }.listStyle(.inset)
                 .scrollContentBackground(.hidden)
-            .navigationTitle("Fruits")
+                .navigationTitle("Fruits")
         }
         .onChange(of: selection) { _, newValue in
             if let newValue {
                 print("Touched \(menus.first(where: { $0.id == newValue })!.text)")
                 
                 Task {
-                            try? await Task.sleep(for: .milliseconds(80))
-                            selection = nil
-                        }
+                    try? await Task.sleep(for: .milliseconds(80))
+                    selection = nil
+                }
             }
         }
     }

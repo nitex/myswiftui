@@ -9,7 +9,7 @@ import SwiftUI
 import FirebaseDatabase
 
 class ShowPayload: ObservableObject {
-  @Published var show = false
+    @Published var show = false
 }
 
 struct ContentView: View {
@@ -47,7 +47,7 @@ struct ContentView: View {
     }
     
     func firebase() {
-        
+
         self.reference = Database.database().reference()
         
         self.reference.child("config").observeSingleEvent(of: .value, with: { snapshot in
@@ -58,8 +58,8 @@ struct ContentView: View {
             
             ShowPayload().show = show
             
-            }) { error in print(error.localizedDescription) }
-        }
+        }) { error in print(error.localizedDescription) }
+    }
 }
 
 #Preview {

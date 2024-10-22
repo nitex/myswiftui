@@ -10,16 +10,16 @@ import WeatherKit
 import CoreLocation
 
 struct WeatherView: View {
-
+    
     @Environment(\.colorScheme) var colorScheme
-
+    
     @State private var weather: Weather?
     @State private var attLogo: URL?
     @State private var attributionURL: URL?
     @State private var logoImage: Image?
-
+    
     let weatherService = WeatherService.shared
-
+    
     var body: some View {
         VStack {
             if let weather {
@@ -30,11 +30,11 @@ struct WeatherView: View {
                 }
             }//if let
             Spacer()
-        
+            
             //white letters on white box if device in dark mode
             AsyncImage(url: attLogo)
-        
-            Group{
+            
+            Group {
                 if let attributionURL {
                     Link("Weather Attribution", destination: attributionURL)
                 }

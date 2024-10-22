@@ -43,8 +43,6 @@ struct PositionView: View {
                 .overlay(RoundedRectangle(cornerRadius: 15)
                     .stroke(Color.blue, lineWidth: 2))
                 .shadow(color: .black, radius: 12)
-            
-            Text("Hello, World!")
                 .offset(y:14)
                 .padding(.bottom)
             
@@ -68,6 +66,8 @@ struct PositionView: View {
                 .buttonStyle(MyActionButtonStyle())
             }
             .padding(.horizontal, 20)
+            
+            Spacer()
         }
     }
 }
