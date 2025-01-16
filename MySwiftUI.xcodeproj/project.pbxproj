@@ -13,6 +13,7 @@
 		DE038C4F2C6A8F2700DA7C2D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE038C4E2C6A8F2700DA7C2D /* FirebaseFirestoreSwift */; };
 		DE038C522C6A906F00DA7C2D /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = DE038C512C6A906F00DA7C2D /* PopupView */; };
 		DE2A130D2BCFE3D5001822A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2A130C2BCFE3D5001822A9 /* ContentView.swift */; };
+		DE2F17AD2D3910D100661C6D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = DE2F17AC2D3910D100661C6D /* FirebaseCrashlytics */; };
 		DE452E1F2C08644C00A3C371 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE452E1E2C08644C00A3C371 /* MapView.swift */; };
 		DE4605DA2BB2F64C00AFFAC3 /* MySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4605D92BB2F64C00AFFAC3 /* MySwiftUIApp.swift */; };
 		DE4605DC2BB2F64C00AFFAC3 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4605DB2BB2F64C00AFFAC3 /* FlagView.swift */; };
@@ -63,6 +64,7 @@
 				DEE005482BD64E620001BF19 /* FirebaseAuth in Frameworks */,
 				DEE0054A2BD64E7D0001BF19 /* FirebaseDynamicLinks in Frameworks */,
 				DE038C4B2C6A8F2700DA7C2D /* FirebaseFirestore in Frameworks */,
+				DE2F17AD2D3910D100661C6D /* FirebaseCrashlytics in Frameworks */,
 				DE038C4D2C6A8F2700DA7C2D /* FirebaseFirestoreCombine-Community in Frameworks */,
 				DE038C4F2C6A8F2700DA7C2D /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -127,6 +129,7 @@
 				DE4605D22BB2F64C00AFFAC3 /* Sources */,
 				DE4605D32BB2F64C00AFFAC3 /* Frameworks */,
 				DE4605D42BB2F64C00AFFAC3 /* Resources */,
+				DE2F17AE2D39119E00661C6D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -143,6 +146,7 @@
 				DE038C4C2C6A8F2700DA7C2D /* FirebaseFirestoreCombine-Community */,
 				DE038C4E2C6A8F2700DA7C2D /* FirebaseFirestoreSwift */,
 				DE038C512C6A906F00DA7C2D /* PopupView */,
+				DE2F17AC2D3910D100661C6D /* FirebaseCrashlytics */,
 			);
 			productName = MySwiftUI;
 			productReference = DE4605D62BB2F64C00AFFAC3 /* MySwiftUI.app */;
@@ -197,6 +201,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DE2F17AE2D39119E00661C6D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE4605D22BB2F64C00AFFAC3 /* Sources */ = {
@@ -347,6 +376,7 @@
 				CODE_SIGN_ENTITLEMENTS = MySwiftUI/MySwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"MySwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -360,6 +390,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.16;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yugasamuel.WeatherBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -368,7 +399,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -393,6 +424,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.16;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yugasamuel.WeatherBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -401,7 +433,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -467,6 +499,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE038C502C6A906F00DA7C2D /* XCRemoteSwiftPackageReference "PopupView" */;
 			productName = PopupView;
+		};
+		DE2F17AC2D3910D100661C6D /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEE005402BD64DD60001BF19 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
 		};
 		DEE005412BD64DD60001BF19 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;

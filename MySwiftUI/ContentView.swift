@@ -37,7 +37,16 @@ struct ContentView: View {
                         NavigationLink(destination: NavigateView()) { Text("NavigationLink") }
                     }
                     
-                    VStack (alignment: .leading, spacing: 15) { }
+                    VStack (alignment: .leading, spacing: 15) {
+                        Button("Crash 1") {
+                            fatalError("Crash was triggered")
+                        }
+                        
+                        Button("Crash 2") {
+                            let numbers = [0]
+                            let _ = numbers[1]
+                        }
+                    }
                 }
             }
         }.onAppear()
